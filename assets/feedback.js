@@ -52,7 +52,7 @@
 
   function mailFallback(payload) {
     var body = 'Page: ' + payload.page + '\nFrom: ' + (payload.name || 'not given') + '\n\n' + payload.message;
-    window.location.href = 'mailto:james@floatwell.co.uk?subject=' +
+    window.location.href = 'mailto:jamescopebrown@gmail.com?subject=' +
       encodeURIComponent('[dani-site] Change request') + '&body=' + encodeURIComponent(body);
     done(true);
   }
