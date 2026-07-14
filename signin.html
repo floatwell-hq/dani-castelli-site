@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — Dani Castelli Coaching</title>
+<meta name="description" content="Client sign in to the Kahunas app, and coach access for Dani.">
+<meta name="robots" content="noindex"><!-- keep noindex: utility page -->
+<link rel="icon" href="assets/logo-roundel.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600&family=Playfair+Display:ital,wght@1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/brand.css">
+<style>
+.portal{max-width:880px;margin:0 auto}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px}
+.pcard h2{font:400 26px var(--anton);text-transform:uppercase;color:var(--green);margin-bottom:6px}
+.pcard .who{font:500 12px var(--osw);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.applinks{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.backlist{list-style:none;margin-top:14px}
+.backlist li{border-top:1px solid var(--line);padding:10px 2px;display:flex;align-items:center;gap:10px;font-size:14px}
+.backlist li:first-child{border-top:0}
+.backlist a{font-weight:600;text-decoration:none}
+.backlist span{color:var(--muted);font-size:12.5px}
+</style>
+</head>
+<body>
+<nav class="site" aria-label="Primary">
+  <a class="lockup" href="index.html" aria-label="Dani Castelli Coaching — home">
+    <img src="assets/logo-roundel.svg" alt="" width="38" height="38">
+    <span class="wm"><b>Dani Castelli</b><i>coaching</i></span>
+  </a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="coaching.html">Coaching</a>
+    <a href="story.html">My story</a>
+    <a href="signin.html" class="cta" aria-current="page">Sign in</a>
+  </div>
+</nav>
+
+<div class="hero" style="padding:64px 0">
+  <span class="spark" style="top:40px;right:9%">✦ ✦ ✦</span>
+  <div class="wrap">
+    <h1 class="display" style="font-size:clamp(38px,5.5vw,64px)">Sign in</h1>
+    <p class="sub accent">Your plans, check-ins and messages live in the app.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap portal">
+    <div class="grid two">
+      <div class="pcard">
+        <div class="who">I'm a client</div>
+        <h2>Open your coaching app</h2>
+        <p style="font-size:14.5px;color:var(--muted)">Everything happens in Kahunas — your workouts, nutrition plan, weekly check-in and our messages. Sign in with the invite that arrived by email when you joined.</p>
+        <div class="applinks">
+          <a class="btn" data-url="kahunasLoginUrl" href="#">Sign in on the web</a>
+          <a class="btn ghost-g" data-url="appStoreUrl" href="#">iPhone app</a>
+          <a class="btn ghost-g" data-url="playStoreUrl" href="#">Android app</a>
+        </div>
+        <p style="font-size:12.5px;color:var(--muted);margin-top:14px">Your sign-in happens securely on Kahunas — this site never sees your password. Can't find your invite? Message me and I'll resend it.</p>
+      </div>
+      <div class="pcard" style="background:var(--charcoal);border-color:var(--charcoal)">
+        <div class="who" style="color:#8F8C7F">I'm Dani</div>
+        <h2 style="color:var(--bone)">Coach access</h2>
+        <p style="font-size:14.5px;color:#B9B6A9">Your whole backend, one place. These open your own Google and Kahunas accounts — nothing here is visible to clients.</p>
+        <ul class="backlist" style="margin-top:16px">
+          <li><a data-url="pipelineSheetUrl" href="#" style="color:var(--bone)">Client pipeline</a><span style="color:#8F8C7F">— the sheet: one row per person, the menu does the rest</span></li>
+          <li><a data-url="gmailDraftsUrl" href="#" style="color:var(--bone)">Proposal drafts</a><span style="color:#8F8C7F">— review and send</span></li>
+          <li><a data-url="calendarUrl" href="#" style="color:var(--bone)">Calendar &amp; bookings</a><span style="color:#8F8C7F">— consults and onboarding calls</span></li>
+          <li><a data-url="firefliesUrl" href="#" style="color:var(--bone)">Fireflies</a><span style="color:#8F8C7F">— recordings and transcripts</span></li>
+          <li><a data-url="kahunasLoginUrl" href="#" style="color:var(--bone)">Kahunas coach login</a><span style="color:#8F8C7F">— clients, plans, check-ins</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note" style="margin-top:22px">New here and not a client yet? Start with a <a data-url="consultBookingUrl" href="#">free consultation</a> — sign-in comes after you join.</div>
+  </div>
+</section>
+
+<footer class="site">
+  <span class="spark">✦ ✦ ✦</span>
+  <a data-url="instagramUrl" href="#">@danicastelli_coaching</a>
+  <p class="fine">© Dani Castelli Coaching · site by floatwell</p>
+</footer>
+<script src="assets/config.js"></script>
+</body>
+</html>
