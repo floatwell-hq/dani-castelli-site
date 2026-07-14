@@ -41,6 +41,14 @@ nav.site .links a.cta[aria-current="page"]{color:var(--charcoal)}
 /* hero band */
 .hero{background:var(--charcoal);color:#fff;padding:96px 0;position:relative;overflow:hidden}
 .hero .spark{position:absolute;font-size:18px}
+/* photographic hero (home) — Dani's image behind the text, darkened to the IG register.
+   Replace assets/hero.jpg with an original from her shoots when supplied. */
+.hero.hero-photo{background:
+  linear-gradient(100deg, rgba(33,31,28,.97) 0%, rgba(33,31,28,.86) 46%, rgba(33,31,28,.55) 100%),
+  url('hero.jpg') 72% 18% / cover no-repeat var(--charcoal)}
+@media(max-width:760px){.hero.hero-photo{background:
+  linear-gradient(rgba(33,31,28,.88), rgba(33,31,28,.82)),
+  url('hero.jpg') center 6% / cover no-repeat var(--charcoal)}}
 .hero p.sub{margin:22px 0 8px;color:#fff}
 .hero p.body{color:#B9B6A9;max-width:560px;margin-bottom:32px}
 
