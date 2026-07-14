@@ -10,7 +10,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600&family=Playfair+Display:ital,wght@1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/brand.css">
-<style>.ig-embed{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}.ig-embed iframe{width:100%;height:520px;border:0;display:block}</style>
+<style>
+.ig-embed{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;position:relative;min-height:520px}
+.ig-embed iframe{width:100%;height:520px;border:0;display:block;position:relative;z-index:2}
+.ig-fallback{position:absolute;inset:0;background:var(--charcoal);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--bone);z-index:1;text-align:center;padding:24px}
+.ig-fallback .big{font:400 34px var(--anton);text-transform:uppercase}
+</style>
 </head>
 <body>
 <nav class="site" aria-label="Primary">
@@ -47,6 +52,7 @@
       </div>
       <div>
         <div class="ig-embed">
+          <div class="ig-fallback" aria-hidden="true"><span class="spark">✦ ✦ ✦</span><span class="big">My story</span><span style="font:500 14px var(--pf);font-style:italic;color:#fff">@danicastelli_coaching</span></div>
           <iframe title="Instagram — My story, @danicastelli_coaching" src="https://www.instagram.com/p/DW4bjW1jeWe/embed" loading="lazy"></iframe>
         </div>
         <p style="font-size:12.5px;color:var(--muted);margin-top:8px;text-align:center">Live from <a data-url="instagramUrl" href="#">@danicastelli_coaching</a></p>
