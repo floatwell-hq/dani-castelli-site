@@ -14,7 +14,10 @@ window.DC_CONFIG = {
   firefliesUrl: "https://app.fireflies.ai",
   gmailDraftsUrl: "https://mail.google.com/mail/u/0/#drafts",
   packageName: "1:1 Online Coaching",
-  priceMonthly: 149        // provisional — Dani confirms
+  priceMonthly: 149,       // provisional — Dani confirms
+  /* Feedback widget: Apps Script web app URL (apps-script/Feedback.gs).
+   * While "" the widget falls back to a pre-filled email to James. */
+  feedbackEndpoint: ""
 };
 
 /* Wire [data-url="key"] elements to config; placeholder if unset. */
